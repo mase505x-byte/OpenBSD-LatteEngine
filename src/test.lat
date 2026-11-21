@@ -1,0 +1,11 @@
+extern lat_print_int(int x): void;
+extern lat_window_init(int w, int h): int;
+extern lat_present(int fb_ptr): void;
+
+int main() {
+   int ok = lat_window_init(640, 480);
+   lat_print_int(ok); 
+   lat_present(0);
+   return 0;
+}
+
